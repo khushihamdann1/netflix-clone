@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.913), rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.92)), url(background.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5vw 0 4vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+select {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.062);
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    backdrop-filter: blur(7px);
+}
+
+#lang option {
+    color: black;
+}
+
+select:focus {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#navbar a {
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    background-color: red;
+    border: none;
+    padding: 9px 17px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    margin: 32px 0 0;
+    min-height: 27rem;
+    width: 100%;
+    max-width: 120rem;
+    padding: 16px 0 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 502px;
+    text-align: center;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0 0 8px;
+}
+
+#line1 {
+    color: white;
+    font-size: 16px;
+    margin: 0 0 16px;
+    font-weight: 400;
+}
+
+#line2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0 0;
+    gap: 10px;
+}
+
+#email input {
+    background-color: rgba(255, 255, 255, 0.107);
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    padding: 14px 16px 14px;
+    font-size: 18px;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    width: 320px;
+}
+
+#email button {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 14px 18px 14px 18px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 650;
+    width: 180px;
+}
+
+@media (max-width: 950px) {
+    .heading {
+        width: 432px;
+}
+    .heading h1 {
+        font-size: 32px;
+}
+    #symbol img {
+        height: 47px;
+}
+    #email input {
+        width: 240px;
+}
+}
+
+@media (max-width: 600px) {
+    .heading {
+    width: 100%;
+}
+    select {
+        width: 62px;
+    }
+    #email {
+        display: flex;
+        flex-direction: column;
+    }
+    #email input {
+        max-width: 420px;
+    }
+    .main {
+        padding: 7px;
+        box-sizing: border-box;
+    }
+}

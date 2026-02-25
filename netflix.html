@@ -8,13 +8,28 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div id="symbol">
+            <img src="Netflix_Logo_RGB.png" alt="Netflix_symbol" height="70px">
+        </div>
         <nav id="navbar">
-            <div id="symbol">
-                <img src="c:\Users\1038\Downloads\Netflix_Logo_RGB.png c:\Users\1038\Downloads\background.jpg" alt="Netflix_symbol" height="75px">
-            </div>
-            <a href="#signin">Sign in</a>
+            <select name="lang" id="lang">
+                <option value="English">English</option>
+                <option value="hindi">हिंदी</option>
+                <option value="arabic">العربية</option>
+            </select>
+            <a href="#signin">Sign In</a>
         </nav>
     </header>
+    <section class="main">
+    <div class="heading">
+        <h1>Unlimited movies, shows, and more</h1>
+        <p id="line1">Starts at ₹149. Cancel at any time.</p>
+        <p id="line2">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div id="email">
+            <input type="email" name="email" placeholder="Email address">
+            <button>Get started ></button>
+        </div>
+    </div>
+    </section>
 </body>
 </html>
