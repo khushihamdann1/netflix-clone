@@ -126,6 +126,11 @@ select:focus {
     color: white;
     font-weight: 650;
     width: 180px;
+    transition: all 0.3s ease;
+}
+
+#email button:hover {
+    background-color: rgb(189, 6, 6);
 }
 
 @media (max-width: 950px) {
