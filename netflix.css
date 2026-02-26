@@ -133,6 +133,10 @@ select:focus {
     background-color: rgb(189, 6, 6);
 }
 
+#email button:active {
+    background-color: rgb(189, 6, 6);
+}
+
 @media (max-width: 950px) {
     .heading {
         width: 432px;
