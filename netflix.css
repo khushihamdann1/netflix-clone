@@ -161,4 +161,17 @@ select:focus {
         padding: 7px;
         box-sizing: border-box;
     }
+    #lang {
+        padding: 4.5px;
+        height: 33px;
+    }
+    #symbol img {
+        height: 37px;
+    }
+    header {
+        padding: 9px 18px 0 14.4px;
+    }
+    #email button {
+        max-width: 160px;
+    }
 }
